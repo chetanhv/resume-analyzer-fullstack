@@ -1,0 +1,14 @@
+# Node stuff
+node_modules
+dist
+
+# VS Code
+.vscode/
+
+# System
+.DS_Store
+
+# Sensitive
+.env
+uploads
+resume_text.txt
