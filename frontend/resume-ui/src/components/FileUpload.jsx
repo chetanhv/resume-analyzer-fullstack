@@ -15,7 +15,7 @@ const FileUpload = ({ onResult }) => {
 
   try {
     setLoading(true);
-    const res = await axios.post("http://localhost:5000/upload", formData);
+    const res = await axios.post(`${import.meta.env.VITE_API_URL}/upload`, formData);
     onResult(res.data);
   } catch (err) {
     console.error("Upload error:", err);
